@@ -8,7 +8,7 @@ import Testimonials from "@/sections/Testimonials"
 import CaseProcess from "@/sections/CaseProcess"
 import FAQ from "@/sections/Faq"
 import Footer from "@/sections/Footer"
-
+import BottomCta from "@/sections/BottomCta"
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -21,6 +21,7 @@ export default function Home() {
       <Testimonials />
       <CaseProcess />
       <FAQ />
+      <BottomCta />
       <Footer />
     </div>
   )

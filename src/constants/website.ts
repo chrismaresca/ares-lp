@@ -1,28 +1,34 @@
 // HERO SECTION
 
+export const DEMO_CALL_LINK = "https://cal.com/team/ares-legal/demo";
+export const CHRONOLOGY_FILE_URL = "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/ares-medchron-example.docx";
+
+// Avatar Images
+const AVATAR_IMAGES = ["https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/daniel-headshot.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/jason-epstein.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/louis-maxwell-holzberg.png", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/zach-harris.jpeg"];
+
 export const heroSection = {
   title: "AI-Powered Legal Excellence",
   description: "The only legal AI platform that works your entire case with you, from intake to resolution. Streamline your practice with intelligent automation.",
   mainCTA: "Book Demo",
   secondaryCTA: "Example Chronology",
-  trustBadgeText: "Trusted by 10,000+ legal professionals",
+  trustBadgeText: "Trusted by 1,000+ legal professionals",
+  avatarImages: AVATAR_IMAGES,
 };
 
 // Header Section
 
 export const NAVIGATION_ITEMS = [
   {
+    title: "Benefits",
+    href: "#benefits",
+  },
+  {
+    title: "Testimonials",
+    href: "#testimonials",
+  },
+  {
     title: "Solutions",
-    href: "/solutions",
-    dropdown: true,
-  },
-  {
-    title: "Pricing",
-    href: "/pricing",
-  },
-  {
-    title: "Resources",
-    href: "/resources",
+    href: "#solutions",
   },
 ];
 
@@ -94,21 +100,21 @@ export const testimonialsConstants = {
       author: "Zac",
       title: "Attorney",
       company: "Personal Injury Law Firm",
-      avatar: "/placeholder.svg?height=64&width=64",
+      avatar: "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/zach-harris.jpeg",
     },
     {
       quote: "My paralegal was amazed by how Ares helps pinpoint missing records and streamline our trial timelines. It's incredibly useful from a trial standpoint and is exactly what we need to stay organized and find any gaps. The summaries are so clear and detailed that it feels like a game-changer for our practice.",
       author: "Louis",
       title: "Senior Partner",
       company: "Trial Law Associates",
-      avatar: "/placeholder.svg?height=64&width=64",
+      avatar: "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/louis-maxwell-holzberg.png",
     },
     {
       quote: "Ares is a huge step up from what we were using before. It's more organized and pulls out exactly what I need across multiple providers, such as massage therapists, chiropractors, surgeons, and more. I love how it zeroes in on the key findings from imaging without me digging through dozens of pages. It also makes it easy to track how a client's symptoms line up chronologically and medically with their injuries. Overall, it helps me build a clear narrative for my demand.",
       author: "Dan",
       title: "Managing Attorney",
       company: "Injury Law Group",
-      avatar: "/placeholder.svg?height=64&width=64",
+      avatar: "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/daniel-headshot.jpeg",
     },
   ],
 };
@@ -132,7 +138,7 @@ export const logoTickerConstants = {
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/harrislaw-drIOGr0S01K8rfzIgnYJ978id9G6aW.png",
       alt: "Harris Legal",
-    }
+    },
   ],
 };
 
@@ -181,8 +187,18 @@ export const caseProcessConstants = {
   ],
 };
 
+// Bottom CTA Section
+
+export const bottomCTAConstants = {
+  title: "Let's find more value in your cases.",
+  description: "Ares is a tool that helps you find more value in your cases. It is a tool that helps you find more value in your cases. It is a tool that helps you find more value in your cases.",
+  cta: "Schedule Demo",
+  cta2: "Watch Demo",
+};
+
 // Footer Section
 
 export const footerConstants = {
   copyright: "© 2025 Ares Legal. All rights reserved.",
+  email: "founders@areslegal.com",
 };

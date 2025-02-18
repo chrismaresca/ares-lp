@@ -27,6 +27,7 @@ export default function CaseProcess() {
         },
         {
           threshold: 0.5,
+          rootMargin: "0px 0px -20% 0px", // Adjust the bottom margin as needed
         }
       );
 
@@ -50,7 +51,7 @@ export default function CaseProcess() {
   };
 
   return (
-    <section className="relative bg-muted/30">
+    <section className="relative bg-muted/30" id="solutions">
       <div className="container py-24 md:py-32">
         {/* Section Header */}
         <div className="mx-auto mb-24 max-w-[800px] text-center">
@@ -67,7 +68,7 @@ export default function CaseProcess() {
 
         <div className="flex flex-col md:flex-row md:gap-8 lg:gap-12">
           {/* Fixed Navigation */}
-          <div className="hidden md:sticky md:block md:top-24 md:h-[calc(100vh-6rem)] md:w-64 lg:w-72 space-y-1 mb-12 md:mb-0">
+          <div className="hidden md:sticky md:block md:top-24 md:h-[calc(100vh-6rem)] md:w-72 lg:w-96 space-y-1 mb-12 md:mb-0">
             <h2 className="text-2xl font-semibold mb-6">Case Process</h2>
             <div className="space-y-6">
               {caseProcessConstants.processSteps.map((step, index) => (

@@ -8,6 +8,12 @@ import { Button } from "@/components/ui/button";
 import Logo from "@/components/header/logo";
 import MainNav from "@/components/header/main-nav";
 
+// Constants
+import { DEMO_CALL_LINK } from "@/constants/website";
+
+// Components
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -30,8 +36,10 @@ export default function Header() {
 
           {/* Schedule a demo Button */}
           <Button>
-            Schedule a demo
-            <ChevronRight className="ml-2 h-4 w-4" />
+            <Link target="_blank" href={DEMO_CALL_LINK} className="flex items-center">
+              Schedule a demo
+              <ChevronRight className="ml-2 h-4 w-4" />
+            </Link>
           </Button>
           {/* End of Schedule a demo Button */}
         </div>
