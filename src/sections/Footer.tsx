@@ -19,7 +19,7 @@ export default function Footer() {
   const [copied, setCopied] = useState(false);
   const [open, setOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const email = "founders@ares-legal.com";
+  const email = "founders@areslegal.ai";
 
   const handleCopy = () => {
     // Copy the email to clipboard

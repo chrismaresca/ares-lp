@@ -9,7 +9,7 @@ const AVATAR_IMAGES = ["https://medchronai-files.s3.us-west-1.amazonaws.com/land
 export const heroSection = {
   title: "AI-Powered Legal Excellence",
   description: "The only legal AI platform that works your entire case with you, from intake to resolution. Streamline your practice with intelligent automation.",
-  mainCTA: "Book Demo",
+  mainCTA: "Schedule a call",
   secondaryCTA: "Example Chronology",
   trustBadgeText: "Trusted by 1,000+ legal professionals",
   avatarImages: AVATAR_IMAGES,
@@ -147,7 +147,7 @@ export const logoTickerConstants = {
 export const caseProcessConstants = {
   title: "Made for Modern Medical Chronologies",
   description: "Ares is created by a founding team with experience in medical records and legal tech. Committed to building the best tool for personal injury law firms.",
-  cta: "Book Demo",
+  cta: "Schedule a call",
   processSteps: [
     {
       title: "Case intake and evaluation",
@@ -192,7 +192,7 @@ export const caseProcessConstants = {
 export const bottomCTAConstants = {
   title: "Let's find more value in your cases.",
   description: "Ares is a tool that helps you find more value in your cases. It is a tool that helps you find more value in your cases. It is a tool that helps you find more value in your cases.",
-  cta: "Schedule Demo",
+  cta: "Schedule a call",
   cta2: "Watch Demo",
 };
 

@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Maximize2, Search } from "lucide-react";
-import DownloadChronology from "@/components/download-chronology";
+import Link from "next/link";
+import { DEMO_CALL_LINK } from "@/constants/website";
 
 
 const BENEFITS_CONSTANTS = {
   badge: "Benefits",
   title: "Why Ares?",
   description: "Ares is a tool that helps you save time and money on your legal cases.",
-  downloadText: "Download Example Chronology",
+  mainCTA: "Schedule a call",
   cards: [
     {
       icon: Clock,
@@ -55,8 +56,14 @@ export default function Benefits() {
           <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">{BENEFITS_CONSTANTS.title}</h2>
           <p className="mx-auto max-w-[600px] text-[17px] leading-relaxed text-gray-500">{BENEFITS_CONSTANTS.description}</p>
         </div>
-        <Button variant="link" size="lg" className="text-[17px] font-medium text-blue-600 hover:text-blue-700 tracking-tight">
-          <DownloadChronology text={BENEFITS_CONSTANTS.downloadText} className="flex items-center" iconClassName="ml-2 h-5 w-5" />
+        <Button size="lg" className="h-12">
+          <Link
+            target="_blank"
+            href={DEMO_CALL_LINK}
+            className="flex items-center"
+          >
+            {BENEFITS_CONSTANTS.mainCTA}
+          </Link>
         </Button>
       </div>
 
