@@ -1,15 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import { Card } from "@/components/ui/card";
 
 // React
 import { useEffect, useRef, useState } from "react";
 
 // Constants
-import { CASE_PROCESS_CONSTANTS } from "@/constants/website";
+import { bottomCTAConstants, CASE_PROCESS_CONSTANTS, CONTACT_US_CALL_LINK } from "@/constants/website";
+import { MotionButtonWithCustomIcon } from "@/components/buttons/motion-button-with-icon";
 
 function CaseProcessHeader() {
   return (
@@ -21,12 +19,9 @@ function CaseProcessHeader() {
           {CASE_PROCESS_CONSTANTS.description}
         </p>
       </div>
-      <Link href="/contact-us" className="flex justify-center">
-        <Button size="lg" className="text-[17px] font-medium tracking-tight group">
-          <span className="mr-4">{CASE_PROCESS_CONSTANTS.cta}</span>
-          <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-        </Button>
-      </Link>
+      <div className="flex justify-center">
+        <MotionButtonWithCustomIcon size="lg" textOptions={{ textOptions: [{ text: bottomCTAConstants.cta, href: CONTACT_US_CALL_LINK }], blank: true }} fromColor="bg-primary" toColor="bg-black" switchTextColor={false} />
+      </div>
     </div>
   );
 }

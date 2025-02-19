@@ -191,7 +191,7 @@ export const CASE_PROCESS_CONSTANTS = {
   badge: "How It Works",
   title: "Built By Experts In Medical Records And Legal Tech",
   description: "Ares is created by a founding team with experience in medical records and legal tech. Committed to building the best tool for personal injury law firms.",
-  cta: "Book Demo",
+  cta: "Schedule a Call",
   processSteps: [
     {
       number: "1",
