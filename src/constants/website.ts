@@ -7,11 +7,11 @@ export const CHRONOLOGY_FILE_URL = "https://medchronai-files.s3.us-west-1.amazon
 const AVATAR_IMAGES = ["https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/daniel-headshot.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/jason-epstein.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/louis-maxwell-holzberg.png", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/zach-harris.jpeg"];
 
 export const heroSection = {
-  title: "AI-Powered Legal Excellence",
-  description: "The only legal AI platform that works your entire case with you, from intake to resolution. Streamline your practice with intelligent automation.",
+  title: "Save Time, Settle Faster",
+  description: "Ares helps personal injury firms save hours on medical records review, uncover key facts, and build a winning strategy. Let Ares help you save time and settle faster.",
   mainCTA: "Schedule a call",
-  secondaryCTA: "Example Chronology",
-  trustBadgeText: "Trusted by 1,000+ legal professionals",
+  secondaryCTA: "Get sample chronology",
+  trustBadgeText: "Trusted by leading personal injury firms",
   avatarImages: AVATAR_IMAGES,
 };
 
@@ -19,8 +19,8 @@ export const heroSection = {
 
 export const NAVIGATION_ITEMS = [
   {
-    title: "Benefits",
-    href: "#benefits",
+    title: "Features",
+    href: "#features",
   },
   {
     title: "Testimonials",
