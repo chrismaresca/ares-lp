@@ -19,27 +19,34 @@ const BenefitCard = ({ card }: { card: (typeof BENEFITS_CONSTANTS.cards)[0] }) =
 export default function Benefits() {
   return (
     <section
-      className="container py-24 md:py-32 intersect-once intersect:motion-preset-slide-up motion-delay-200 motion-duration-800 motion-ease-in-out"
+      className="container py-48 sm:py-56 intersect-once intersect:motion-preset-slide-up motion-delay-200 motion-duration-800 motion-ease-in-out"
       id="features"
     >
-      <div className="mx-auto max-w-[800px] text-center space-y-8 mb-16">
-        <p className="text-sm tracking-widest text-muted-foreground font-medium uppercase">
+      <div className="mx-auto max-w-[1000px] text-center space-y-8 mb-32">
+        <p className="text-sm tracking-widest mb-6 text-muted-foreground font-medium uppercase">
           {BENEFITS_CONSTANTS.badge}
         </p>
         <div className="space-y-6">
-          <h1 className="text-4xl sm:text-5xl font-semibold leading-[1.2] sm:leading-[1.2]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.4] sm:leading-[1.4]">
             {BENEFITS_CONSTANTS.title.firstLine.beforeItalic}{" "}
-            <span className="italic font-serif">{BENEFITS_CONSTANTS.title.firstLine.italic}</span>{" "}
+            <span className="italic font-serif">
+              {BENEFITS_CONSTANTS.title.firstLine.italic}
+            </span>{" "}
             {BENEFITS_CONSTANTS.title.firstLine.afterItalic}
-            <br className="hidden sm:block" /> {BENEFITS_CONSTANTS.title.secondLine.before}
+            <br className="hidden sm:block" />{" "}
+            {BENEFITS_CONSTANTS.title.secondLine.before}
           </h1>
-          <p className="mx-auto max-w-[600px] text-lg text-muted-foreground">{BENEFITS_CONSTANTS.description}</p>
+          <p className="mx-auto max-w-[600px] text-lg text-muted-foreground leading-relaxed">
+            {BENEFITS_CONSTANTS.description}
+          </p>
         </div>
         <div className="flex justify-center">
           <MotionButtonWithCustomIcon
             size="lg"
             textOptions={{
-              textOptions: [{ text: DEMO_BUTTON_TEXT, href: CONTACT_US_CALL_LINK }],
+              textOptions: [
+                { text: DEMO_BUTTON_TEXT, href: CONTACT_US_CALL_LINK },
+              ],
               blank: true,
             }}
             fromColor="bg-primary"
@@ -58,6 +65,6 @@ export default function Benefits() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
