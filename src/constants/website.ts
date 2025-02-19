@@ -1,5 +1,5 @@
 // Icons
-import { Clock, Search, Maximize2 } from "lucide-react";
+import { Clock, Search, Maximize2, ShieldCheck } from "lucide-react";
 
 // GLOBAL CONSTANTS
 export const DEMO_CALL_LINK = "https://cal.com/team/ares-legal/demo";
@@ -42,28 +42,28 @@ export const NAVIGATION_ITEMS = [
   // },
 ];
 
-export const SOLUTIONS = [
-  {
-    title: "Case Intake",
-    description: "Streamline your entire case workflow with AI-powered automation.",
-    href: "/solutions/case-management",
-  },
-  {
-    title: "Medical Chronology",
-    description: "Extract key insights from legal documents in seconds.",
-    href: "/solutions/document-analysis",
-  },
-  {
-    title: "Demand Letters",
-    description: "Find relevant cases and statutes with intelligent search.",
-    href: "/solutions/legal-research",
-  },
-  {
-    title: "Litigation Support",
-    description: "Provide a seamless experience for your clients.",
-    href: "/solutions/litigation-support",
-  },
-];
+// export const SOLUTIONS = [
+//   {
+//     title: "Case Intake",
+//     description: "Streamline your entire case workflow with AI-powered automation.",
+//     href: "/solutions/case-management",
+//   },
+//   {
+//     title: "Medical Chronology",
+//     description: "Extract key insights from legal documents in seconds.",
+//     href: "/solutions/document-analysis",
+//   },
+//   {
+//     title: "Demand Letters",
+//     description: "Find relevant cases and statutes with intelligent search.",
+//     href: "/solutions/legal-research",
+//   },
+//   {
+//     title: "Litigation Support",
+//     description: "Provide a seamless experience for your clients.",
+//     href: "/solutions/litigation-support",
+//   },
+// ];
 
 // Benefits Section
 
@@ -85,16 +85,25 @@ export const BENEFITS_CONSTANTS = {
       icon: Clock,
       stat: "15+",
       label: "Hours Saved Per Case",
+      description: "Eliminate 15+ hours of medical review and summarization per case.",
     },
     {
       icon: Search,
       stat: "100%",
       label: "Case Coverage",
+      description: "Quickly learn the medical facts that will make or break a case.",
     },
     {
       icon: Maximize2,
       stat: "2x",
       label: "Caseload Capacity",
+      description: "Take on more cases without sacrificing the quality.",
+    },
+    {
+      icon: ShieldCheck,
+      stat: "100%",
+      label: "Secure & Compliant",
+      description: "HIPAA compliant with enterprise-grade data privacy and security.",
     },
   ],
 };
@@ -103,31 +112,19 @@ export const BENEFITS_CONSTANTS = {
 
 export const FaqConstants = {
   sectionTitle: "Frequently asked questions",
-  sectionDescription: "Everything you need to know about the product and billing.",
+  sectionDescription: "Everything you need to know about Ares.",
   questions: [
     {
-      question: "Is there a free trial available?",
-      answer: "Yes, you can try our service free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you started with everything as smoothly possible.",
+      question: "How do I know Ares is accurate?",
+      answer: "We provide references to specific pages in the original documents for all medical events. Accuracy is paramount to Ares AI. Note: we always recommend final manual review on AI generated outputs.",
     },
     {
-      question: "Can I change my plan later?",
-      answer: "Yes, you can upgrade or downgrade your plan at any time. If you upgrade, you'll be charged the prorated amount for the remainder of the current billing cycle. If you downgrade, you'll receive credit for the remainder of the current billing cycle.",
+      question: "Is my data private and secure?",
+      answer: "Yes. We fully encrypt all your data with enterprise-grade security. We have a Zero Data Retention Agreement with our AI providers. Your data will never be used to train models.",
     },
     {
-      question: "What is your cancellation policy?",
-      answer: "You can cancel your subscription at any time, and you'll retain access to the service until the end of your current billing period. We don't offer refunds for partial months.",
-    },
-    {
-      question: "Can other info be added to an invoice?",
-      answer: "Yes, you can add additional information to your invoices, including PO numbers, custom notes, and additional recipient emails. You can manage these settings in your billing dashboard.",
-    },
-    {
-      question: "How does billing work?",
-      answer: "We bill monthly or annually, depending on your preference. All plans are billed in advance. For monthly plans, you'll be billed on the same date each month. For annual plans, you'll be billed once per year.",
-    },
-    {
-      question: "How do I change my account email?",
-      answer: "You can change your account email from your account settings page. After changing your email, you'll need to verify your new email address.",
+      question: "What types of medical records can Ares handle?",
+      answer: "Ares can handle all types of medical records, from PDFs to scanned documents - even handwritten notes!",
     },
   ],
 };
@@ -183,6 +180,10 @@ export const logoTickerConstants = {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/harrislaw-drIOGr0S01K8rfzIgnYJ978id9G6aW.png",
       alt: "Harris Legal",
     },
+    {
+      src: "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/nyaccidentlawyer.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAVTFR2EZV5LSOMCUJ%2F20250219%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20250219T182102Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMSJHMEUCIQCtLBpw8h%2FLU5zgEtHuotTqsGb4HoJHaG4U6Sz7fYr%2FJAIgAIMkLNRZxrmLv2f5iaNsg3qbhHZE%2F8BaK5vrBCCHOKgqiAMIq%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAEGgwzODQ3NzI0ODI2NjciDPgPKDsI3yDBKltrxircAhjrrgh5hTCStt%2BtFE9NeVHuFITgrUG%2B7uzRAzT7Ji99xi8OpsEu%2BteMCoNmjKefmcZB7b8m6VHAeQym4r5kofNAF1OvtJJWNjpInSCKnU77b3T4WMjDFx%2Fm%2BO1azREAT4fnoznlXJHb%2F8B6ScmjihzouVIxjM%2Bd7D%2BbmJ2bVCpFL177GPZTGkcm0ZPba5TMAGb9RTL6LyYp4DCuO7cylATYT3y5XZZ0ZRrF6RHngvGVnRV0BAV6m3OJ35tHYMxTpAaAwHIww4RkidgqBaDme4hOvEaszL14RSNnodA1Hml%2FqO7QsLDN20TLRTxBkVA2V4znfkZ3bJ2Q3sGfScbTZlmQvuo9M0ckSVQciocmL0Od1OGrwJAobtVMUZUtpqlrtko2wsbH%2FqUc1AVej%2FNRVcnJDKebOamA2QwaxOrMnyVLqQWO%2FAEZHh25aRWkebm0mIjg%2FC4wnSEOcM0cXzDjwdi9BjqzArDQN%2BcUmGflBt%2BNBAPSWfq56hBGRKICqpF6OIfovjpmZvzDJTa4rNUEWRjT2uhQvyxlfCkRuKTPSH5KOIHNiIvAadsYPbHlQWOwZgKPVI8Q26iXPfcE6uJ4jGBcRzeXJtAiJvQKHvTJyVYDd6qfxjXywAG70oT4E1YfF5IXvb2UXGNUTyDKH8acKiZPsKcqbr5OIS29Ss41JE8n97JJVVtkc%2FoGvt80YDOnhQg29cORViYBZ%2F1aI7uNhyoF%2B9%2F3dV2G7IPPnBsFGgVw%2BNCNvBU%2F3n1BB3mF53KBY6ne%2Bx0qZUT%2FctrHUqRk1PnD9KFY3c5MI2D8LQG2YnyEK2uIcNkgKiXLqdBj1dq1Friq7igIOo7FkgA2YSPknkMPGNpUcuzUJomTopFiwnO066ZF%2F2CiZIs%3D&X-Amz-Signature=abedd7772c74afe921425e68fe680142246db30e6dc88f36e7f0454666ddeae4&X-Amz-SignedHeaders=host&response-content-disposition=inline",
+      alt: "Leav & Steinberg LLP",
+    },
   ],
 };
 
@@ -196,23 +197,23 @@ export const CASE_PROCESS_CONSTANTS = {
   processSteps: [
     {
       number: "1",
-      title: "Initial Consultation",
-      description: "Tell us about your case details, medical records, and specific requirements. We'll evaluate your case and provide a comprehensive assessment.",
+      title: "Upload Case Files",
+      description: "Drag and drop documents into the platform.",
     },
     {
       number: "2",
-      title: "Case Analysis",
-      description: "Our expert team analyzes your medical records and case documents to identify key elements and build a strong foundation for your claim.",
+      title: "AI-Powered Analysis",
+      description: "Ares instantly reads, extracts, and organizes all medical data.",
     },
     {
       number: "3",
-      title: "Documentation Review",
-      description: "We thoroughly review all medical chronologies and documentation to ensure accuracy and completeness of your case file.",
+      title: "Automatic Chronology Generation",
+      description: "After analysis, get a comprehensive overview that includes a narrative summary, timeline of events, diagnostic highlights, and summaries for every visit.",
     },
     {
       number: "4",
-      title: "Case Strategy",
-      description: "Based on our analysis, we develop a comprehensive strategy to maximize your case's potential and guide you through the next steps.",
+      title: "You're All Set!",
+      description: "Download the chronology as a PDF for easy sharing with clients and team members.",
     },
   ],
 };
@@ -220,7 +221,7 @@ export const CASE_PROCESS_CONSTANTS = {
 // Bottom CTA Section
 
 export const bottomCTAConstants = {
-  title: "Let's find more value in your cases.",
+  title: "Ready to let Ares work for you?",
   description: "Ares is a tool that helps you find more value in your cases. It is a tool that helps you find more value in your cases. It is a tool that helps you find more value in your cases.",
   cta: DEMO_BUTTON_TEXT,
 };
