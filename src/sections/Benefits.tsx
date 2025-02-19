@@ -1,7 +1,11 @@
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { DEMO_BUTTON_TEXT, DEMO_CALL_LINK, BENEFITS_CONSTANTS } from "@/constants/website"
+import {
+  DEMO_BUTTON_TEXT,
+  CONTACT_US_CALL_LINK,
+  BENEFITS_CONSTANTS,
+} from "@/constants/website";
 
 const BenefitCard = ({ card, isLast }: { card: (typeof BENEFITS_CONSTANTS.cards)[0]; isLast: boolean }) => {
   const Icon = card.icon
@@ -48,7 +52,7 @@ export default function Benefits() {
           size="lg"
           className="text-[17px] font-medium text-blue-600 hover:text-blue-700 tracking-tight group transition-all duration-300"
         >
-          <Link href={DEMO_CALL_LINK} className="flex items-center">
+          <Link href={CONTACT_US_CALL_LINK} className="flex items-center">
             {DEMO_BUTTON_TEXT}
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300 ease-in-out" />
           </Link>

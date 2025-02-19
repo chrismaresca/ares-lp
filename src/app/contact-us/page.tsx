@@ -29,7 +29,7 @@ export default function ContactPage() {
           </div>
 
           <div className="sm:flex hidden flex-row gap-4 motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-duration-[800ms] motion-delay-700 motion-ease-spring-smooth">
-            <MotionButton buttonText="Email Us" buttonHref="mailto:karn@areslegal.com" variant="primary" />
+            <MotionButton buttonText="Email Us" buttonHref="mailto:founders@areslegal.ai" variant="primary" />
             <MotionButton buttonText="Call Us" buttonHref={CONTACT_US_CALL_LINK} variant="secondary" />
           </div>
 
@@ -37,10 +37,6 @@ export default function ContactPage() {
             <Button variant="outline" size="sm" onClick={() => copyToClipboard(contactUsConstants.emails[0])} className="font-mono text-xs w-full sm:w-auto justify-between">
               <span className="mr-2">{contactUsConstants.emails[0]}</span>
               {copiedEmail === contactUsConstants.emails[0] ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
-            </Button>
-            <Button variant="outline" size="sm" onClick={() => copyToClipboard(contactUsConstants.emails[1])} className="font-mono text-xs w-full sm:w-auto justify-between">
-              <span className="mr-2">{contactUsConstants.emails[1]}</span>
-              {copiedEmail === contactUsConstants.emails[1] ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
             </Button>
           </div>
 

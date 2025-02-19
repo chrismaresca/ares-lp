@@ -1,5 +1,5 @@
 // Constants
-import { bottomCTAConstants, DEMO_CALL_LINK } from "@/constants/website";
+import { bottomCTAConstants, CONTACT_US_CALL_LINK } from "@/constants/website";
 import { MotionButtonWithCustomIcon } from "@/components/buttons/motion-button-with-icon";
 
 export default function BottomCta() {
@@ -11,7 +11,7 @@ export default function BottomCta() {
             <h2 className="mb-8 text-4xl font-medium tracking-tight sm:text-5xl">{bottomCTAConstants.title}</h2>
             <p className="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">{bottomCTAConstants.description}</p>
 
-            <MotionButtonWithCustomIcon size="lg" textOptions={{ textOptions: [{ text: bottomCTAConstants.cta, href: DEMO_CALL_LINK }], blank: true }} fromColor="bg-primary" toColor="bg-black" switchTextColor={false} />
+            <MotionButtonWithCustomIcon size="lg" textOptions={{ textOptions: [{ text: bottomCTAConstants.cta, href: CONTACT_US_CALL_LINK }], blank: true }} fromColor="bg-primary" toColor="bg-black" switchTextColor={false} />
           </div>
         </div>
       </div>

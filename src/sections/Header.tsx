@@ -6,7 +6,7 @@ import Logo from "@/components/header/logo";
 import MainNav from "@/components/header/main-nav";
 
 // Constants
-import { DEMO_CALL_LINK, DEMO_BUTTON_TEXT } from "@/constants/website";
+import { CONTACT_US_CALL_LINK, DEMO_BUTTON_TEXT } from "@/constants/website";
 
 // Components
 import Link from "next/link";
@@ -35,7 +35,7 @@ export default function Header() {
 
           {/* Schedule a demo Button */}
           <Button>
-            <Link target="_blank" href={DEMO_CALL_LINK} className="flex items-center">
+            <Link target="_blank" href={CONTACT_US_CALL_LINK} className="flex items-center">
               {DEMO_BUTTON_TEXT}
             </Link>
           </Button>

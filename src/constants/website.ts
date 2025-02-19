@@ -2,9 +2,7 @@
 import { Clock, Search, Maximize2, ShieldCheck } from "lucide-react";
 
 // GLOBAL CONSTANTS
-export const DEMO_CALL_LINK = "https://cal.com/team/ares-legal/demo";
-// TODO: add a contact us call link
-export const CONTACT_US_CALL_LINK = "https://cal.com/team/ares-legal/intro-call";
+export const CONTACT_US_CALL_LINK = "https://cal.com/team/ares-legal/intro";
 export const CHRONOLOGY_FILE_URL = "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/ares-medchron-example.docx";
 export const DEMO_BUTTON_TEXT = "Schedule a Call";
 
@@ -242,5 +240,5 @@ export const contactUsConstants = {
   description: "We believe founders should always be accessible. If you have any questions, please don't hesitate to reach out to us.",
   copyEmailSubtitle: "Or, if you're like Chris and also don't have email set up on Mac, you can copy our emails directly:",
   copyEmailSubtitleMobile: "Send us an email at:",
-  emails: ["karn@areslegal.com", "chris@areslegal.com"],
+  emails: ["founders@areslegal.ai"],
 };

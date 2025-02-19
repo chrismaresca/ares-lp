@@ -10,7 +10,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Video from "@/components/demo";
 
 // Constants
-import { DEMO_CALL_LINK } from "@/constants/website";
+import { CONTACT_US_CALL_LINK } from "@/constants/website";
 
 // Download Chronology
 import DownloadChronology from "@/components/download-chronology";
@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="flex flex-col gap-4 min-[400px]:flex-row motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-duration-[800ms] motion-delay-700 motion-ease-spring-smooth">
  
               <div className="block">
-                <MotionButtonWithCustomIcon size="lg" textOptions={{ textOptions: [{ text: heroSection.mainCTA, href: DEMO_CALL_LINK }], blank: true }} fromColor="bg-primary" toColor="bg-black" switchTextColor={false} />
+                <MotionButtonWithCustomIcon size="lg" textOptions={{ textOptions: [{ text: heroSection.mainCTA, href: CONTACT_US_CALL_LINK }], blank: true }} fromColor="bg-primary" toColor="bg-black" switchTextColor={false} />
               </div>
               <Button size="lg" variant="outline">
                 <DownloadChronology text={heroSection.secondaryCTA} className="flex items-center" iconClassName="ml-2 h-4 w-4" />
