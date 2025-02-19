@@ -1,6 +1,3 @@
-// Lucide
-import { ChevronRight } from "lucide-react";
-
 // Shadcn UI
 import { Button } from "@/components/ui/button";
 
@@ -40,7 +37,6 @@ export default function Header() {
           <Button>
             <Link target="_blank" href={DEMO_CALL_LINK} className="flex items-center">
               {DEMO_BUTTON_TEXT}
-              <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
           {/* End of Schedule a demo Button */}

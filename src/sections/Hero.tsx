@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-6 motion-opacity-in-0 motion-blur-in-md motion-duration-[800ms] motion-delay-300 motion-ease-spring-smooth">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">{heroSection.title}</h1>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-[3.6rem]">{heroSection.title}</h1>
               <p className="max-w-[600px] text-lg text-muted-foreground sm:text-xl">{heroSection.description}</p>
             </div>
             <div className="flex flex-col gap-4 min-[400px]:flex-row motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md motion-duration-[800ms] motion-delay-700 motion-ease-spring-smooth">

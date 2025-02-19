@@ -6,18 +6,18 @@ export const DEMO_CALL_LINK = "https://cal.com/team/ares-legal/demo";
 // TODO: add a contact us call link
 export const CONTACT_US_CALL_LINK = "https://cal.com/team/ares-legal/intro-call";
 export const CHRONOLOGY_FILE_URL = "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/ares-medchron-example.docx";
-export const DEMO_BUTTON_TEXT = "Schedule Demo";
+export const DEMO_BUTTON_TEXT = "Schedule a Call";
 
 // Avatar Images
 const AVATAR_IMAGES = ["https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/daniel-headshot.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/jason-epstein.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/louis-maxwell-holzberg.png", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/zach-harris.jpeg"];
 
 // HERO SECTION
 export const heroSection = {
-  title: "AI-Powered Legal Excellence",
-  description: "The only legal AI platform that works your entire case with you, from intake to resolution. Streamline your practice with intelligent automation.",
+  title: "Save Time, Settle Faster",
+  description: "Ares helps personal injury firms save hours on medical records review, uncover key facts, and build a winning strategy. Let Ares help you save time and settle faster.",
   mainCTA: DEMO_BUTTON_TEXT,
-  secondaryCTA: "Example Chronology",
-  trustBadgeText: "Trusted by 1,000+ legal professionals",
+  secondaryCTA: "Get sample chronology",
+  trustBadgeText: "Trusted by leading personal injury firms",
   avatarImages: AVATAR_IMAGES,
 };
 
@@ -25,8 +25,8 @@ export const heroSection = {
 
 export const NAVIGATION_ITEMS = [
   {
-    title: "Benefits",
-    href: "/#benefits",
+    title: "Features",
+    href: "/#features",
   },
   {
     title: "Testimonials",
@@ -141,23 +141,23 @@ export const testimonialsConstants = {
   testimonials: [
     {
       quote: "I love how Ares provides a straightforward, high-level summary of a client's medical records. It helps me quickly grasp key dates, the patient's age, and the overall treatment story at a glance. It's been a huge time-saver and cuts down on the hours I'd normally spend sifting through endless pages of records.",
-      author: "Zac",
-      title: "Attorney",
-      company: "Personal Injury Law Firm",
+      author: "Zachary",
+      title: "Founding Attorney",
+      company: "Harris Legal",
       avatar: "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/zach-harris.jpeg",
     },
     {
       quote: "My paralegal was amazed by how Ares helps pinpoint missing records and streamline our trial timelines. It's incredibly useful from a trial standpoint and is exactly what we need to stay organized and find any gaps. The summaries are so clear and detailed that it feels like a game-changer for our practice.",
       author: "Louis",
-      title: "Senior Partner",
-      company: "Trial Law Associates",
+      title: "Attorney",
+      company: "Holzberg Legal",
       avatar: "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/louis-maxwell-holzberg.png",
     },
     {
       quote: "Ares is a huge step up from what we were using before. It's more organized and pulls out exactly what I need across multiple providers, such as massage therapists, chiropractors, surgeons, and more. I love how it zeroes in on the key findings from imaging without me digging through dozens of pages. It also makes it easy to track how a client's symptoms line up chronologically and medically with their injuries. Overall, it helps me build a clear narrative for my demand.",
-      author: "Dan",
-      title: "Managing Attorney",
-      company: "Injury Law Group",
+      author: "Daniel",
+      title: "Lead Pre Litigation Attorney",
+      company: "Fielding Law Group",
       avatar: "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/daniel-headshot.jpeg",
     },
   ],
