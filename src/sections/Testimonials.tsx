@@ -17,9 +17,10 @@ const caveat = Caveat({
 
 export default function Testimonials() {
   return (
-    <section className="container py-48 sm:py-56" id="testimonials">
+    <section className="container py-48 sm:py-56 intersect-once intersect:motion-preset-slide-up motion-delay-200 motion-duration-800 motion-ease-in-out" id="testimonials">
       <div className="mb-32 max-w-[800px]">
-        <p className="mb-6 text-sm font-medium uppercase tracking-widest text-muted-foreground">{testimonialsConstants.badge}</p>
+        <p className="text-sm tracking-widest mb-6 text-muted-foreground font-medium uppercase">{testimonialsConstants.badge}</p>
+
         <h2 className="text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl">
           {testimonialsConstants.title1}
           <br />
@@ -28,18 +29,16 @@ export default function Testimonials() {
       </div>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {testimonialsConstants.testimonials.map((testimonial, index) => (
-          <Card 
-            key={index} 
-            className={`h-[600px] rounded-2xl border border-muted/20 bg-gradient-to-b from-muted/40 to-background p-2 shadow-md hover:shadow-lg transition-shadow ${
-              index === 2 ? 'block md:hidden  lg:block' : ''
-            }`}
-          >
-            <CardContent className="flex h-full flex-col p-10">
+          <Card key={index} className={`md:h-[700px] rounded-2xl border border-muted/20 bg-gradient-to-b from-muted/40 to-background p-2 shadow-md hover:shadow-lg transition-shadow ${index === 2 ? "block md:hidden  lg:block" : ""}`}>
+            <CardContent className="relative flex h-full flex-col p-10">
+              {/* Avatar */}
               <div className="mb-8">
                 <Image src={testimonial.avatar || "/placeholder.svg"} alt={testimonial.author} width={64} height={64} className="rounded-full" />
               </div>
-              <blockquote className="mb-8 flex-grow overflow-y-auto text-lg leading-relaxed">&quot;{testimonial.quote}&quot;</blockquote>
-              <footer className="mt-auto">
+              {/* Quote – reserve space for footer by adding bottom margin */}
+              <blockquote className="mb-[80px] flex-grow overflow-hidden text-[1.1rem] leading-relaxed">&quot;{testimonial.quote}&quot;</blockquote>
+              {/* Footer fixed at the bottom */}
+              <footer className="absolute bottom-10 left-10 right-10">
                 <div className={`${caveat.className} mb-1 text-2xl`}>{testimonial.author}</div>
                 <div className="text-sm text-muted-foreground">
                   {testimonial.title} at {testimonial.company}

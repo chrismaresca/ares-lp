@@ -8,7 +8,7 @@ import { FaqConstants } from "@/constants/website";
 
 export default function FAQ() {
   return (
-    <section className="container py-24 md:py-32">
+    <section className="container py-24 md:py-32  intersect-once intersect:motion-preset-slide-up motion-delay-200 motion-duration-800 motion-ease-in-out">
       <div className="mx-auto mb-24 max-w-3xl text-center">
         <h2 className="mb-8 text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl">{FaqConstants.sectionTitle}</h2>
         <p className="text-lg leading-relaxed text-muted-foreground">{FaqConstants.sectionDescription}</p>
