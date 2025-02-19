@@ -110,7 +110,7 @@ export const BENEFITS_CONSTANTS = {
 
 export const FaqConstants = {
   sectionTitle: "Frequently asked questions",
-  sectionDescription: "Everything you need to know about Ares.",
+  sectionDescription: "Get answers to common questions about Ares, from accuracy to security.",
   questions: [
     {
       question: "How do I know Ares is accurate?",
@@ -189,8 +189,8 @@ export const logoTickerConstants = {
 
 export const CASE_PROCESS_CONSTANTS = {
   badge: "How It Works",
-  title: "Built By Experts In Medical Records And Legal Tech",
-  description: "Ares is created by a founding team with experience in medical records and legal tech. Committed to building the best tool for personal injury law firms.",
+  title: "Let Ares do the heavy lifting",
+  description: "Ares turns raw medical records into comprehensive summaries in 4 easy steps.",
   cta: "Schedule a Call",
   processSteps: [
     {
@@ -205,13 +205,13 @@ export const CASE_PROCESS_CONSTANTS = {
     },
     {
       number: "3",
-      title: "Automatic Chronology Generation",
-      description: "After analysis, get a comprehensive overview that includes a narrative summary, timeline of events, diagnostic highlights, and summaries for every visit.",
+      title: "Automatic Summary Generation",
+      description: "Get a comprehensive overview that includes a narrative summary, diagnostic highlights, and summaries for every visit.",
     },
     {
       number: "4",
       title: "You're All Set!",
-      description: "Download the chronology as a PDF for easy sharing with clients and team members.",
+      description: "Export the summary as a PDF if you'd like for easy sharing with your team.",
     },
   ],
 };
