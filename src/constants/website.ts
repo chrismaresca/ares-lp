@@ -70,32 +70,32 @@ export const BENEFITS_CONSTANTS = {
   title: {
     firstLine: {
       beforeItalic: "Automate",
-      italic: "high quality",
-      afterItalic: "case research",
+      italic: "",
+      afterItalic: "medical records review",
     },
     secondLine: {
-      before: "to speed up your case generation",
+      before: "with cutting-edge AI",
     },
   },
-  description: "Ares analyzes your cases & surfaces insights you'd normally spend hours uncovering.",
+  description: "Ares analyzes your cases & surfaces key insights you'd normally spend hours uncovering.",
   cards: [
     {
       icon: Clock,
-      stat: "15+",
+      stat: "10+",
       label: "Hours Saved Per Case",
-      description: "Eliminate 15+ hours of medical review and summarization per case.",
+      description: "Eliminate 10+ hours of medical records review per case.",
     },
     {
       icon: Search,
-      stat: "100%",
-      label: "Case Coverage",
-      description: "Quickly learn the medical facts that will make or break a case.",
+      stat: "Learn",
+      label: "Key Case Facts",
+      description: "Quickly learn key facts that will make or break your case.",
     },
     {
       icon: Maximize2,
-      stat: "2x",
-      label: "Caseload Capacity",
-      description: "Take on more cases without sacrificing the quality.",
+      stat: "Increase",
+      label: "Your Caseload",
+      description: "Take on more cases without sacrificing the quality of your work.",
     },
     {
       icon: ShieldCheck,

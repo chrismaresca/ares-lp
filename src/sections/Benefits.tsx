@@ -1,11 +1,9 @@
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import {
   DEMO_BUTTON_TEXT,
   CONTACT_US_CALL_LINK,
   BENEFITS_CONSTANTS,
 } from "@/constants/website";
+import { MotionButtonWithCustomIcon } from "@/components/buttons/motion-button-with-icon";
 
 const BenefitCard = ({ card, isLast }: { card: (typeof BENEFITS_CONSTANTS.cards)[0]; isLast: boolean }) => {
   const Icon = card.icon
@@ -47,18 +45,10 @@ export default function Benefits() {
             {BENEFITS_CONSTANTS.description}
           </p>
         </div>
-        <Button
-          variant="link"
-          size="lg"
-          className="text-[17px] font-medium text-blue-600 hover:text-blue-700 tracking-tight group transition-all duration-300"
-        >
-          <Link href={CONTACT_US_CALL_LINK} className="flex items-center">
-            {DEMO_BUTTON_TEXT}
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300 ease-in-out" />
-          </Link>
-        </Button>
+        <div className="flex justify-center">
+          <MotionButtonWithCustomIcon size="lg" textOptions={{ textOptions: [{ text: DEMO_BUTTON_TEXT, href: CONTACT_US_CALL_LINK }], blank: true }} fromColor="bg-primary" toColor="bg-black" switchTextColor={false} />
+        </div>
       </div>
-
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] backdrop-blur-sm">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
