@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
-import { ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 // Constants
-import { caseProcessConstants } from "@/constants/website";
+import { caseProcessConstants, DEMO_CALL_LINK } from "@/constants/website";
+import Link from "next/link";
 
 export default function CaseProcess() {
   const [activeStep, setActiveStep] = useState(0);
@@ -60,9 +60,14 @@ export default function CaseProcess() {
           </Badge>
           <h2 className="mb-8 text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl">{caseProcessConstants.title}</h2>
           <p className="mb-10 text-lg leading-relaxed text-muted-foreground">{caseProcessConstants.description}</p>
-          <Button size="lg" className="text-lg">
-            {caseProcessConstants.cta}
-            <ChevronRight className="ml-2 h-5 w-5" />
+          <Button size="lg" className="h-12">
+            <Link
+              target="_blank"
+              href={DEMO_CALL_LINK}
+              className="flex items-center"
+            >
+              {caseProcessConstants.cta}
+            </Link>
           </Button>
         </div>
 

@@ -1,4 +1,3 @@
-import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Constants
@@ -34,7 +33,6 @@ export default function Hero() {
               <Button size="lg" className="h-12">
                 <Link target="_blank" href={DEMO_CALL_LINK} className="flex items-center">
                   {heroSection.mainCTA}
-                  <ChevronRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="h-12">
