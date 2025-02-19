@@ -22,7 +22,7 @@ export default function Footer() {
             </Button>
           <div className="flex items-center gap-6">
             <button className="p-0 focus:outline-none">
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              <Link href="https://www.linkedin.com/company/ares-legal-ai/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>

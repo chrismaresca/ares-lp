@@ -220,7 +220,7 @@ export const CASE_PROCESS_CONSTANTS = {
 
 export const bottomCTAConstants = {
   title: "Ready to let Ares work for you?",
-  description: "Ares is a tool that helps you find more value in your cases. It is a tool that helps you find more value in your cases. It is a tool that helps you find more value in your cases.",
+  description: "Ares will help you save time and settle faster. Please reach out if you'd like to see how Ares can transform your firm.",
   cta: DEMO_BUTTON_TEXT,
 };
 
