@@ -1,5 +1,5 @@
 // Icons
-import { Clock, Search, Maximize2, ArrowRight } from "lucide-react";
+import { Clock, Search, Maximize2 } from "lucide-react";
 
 // GLOBAL CONSTANTS
 export const DEMO_CALL_LINK = "https://cal.com/team/ares-legal/demo";
@@ -260,7 +260,7 @@ export const bottomCTAConstants = {
 
 export const footerConstants = {
   copyright: "© 2025 Ares Legal. All rights reserved.",
-  emails: ["karn@areslegal.com", "chris@areslegal.com"],
+  emails: ["founders@areslegal.ai"],
 };
 
 
@@ -273,6 +273,5 @@ export const contactUsConstants = {
   description: "We believe founders should always be accessible. If you have any questions, please don't hesitate to reach out to us.",
   copyEmailSubtitle: "Or, if you're like Chris and also don't have email set up on Mac, you can copy our emails directly:",
   copyEmailSubtitleMobile: "Send us an email at:",
-  emails: ["karn@areslegal.com", "chris@areslegal.com"],
+  emails: ["founders@areslegal.ai"],
 };
-
