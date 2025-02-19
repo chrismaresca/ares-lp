@@ -16,7 +16,7 @@ function CaseProcessHeader() {
     <div className="mx-auto max-w-[800px] text-center space-y-8 py-16 intersect-once intersect:motion-preset-slide-up motion-delay-100 motion-duration-500 motion-ease-in-out">
       <p className="text-sm tracking-widest mb-6 text-muted-foreground font-medium uppercase">{CASE_PROCESS_CONSTANTS.badge}</p>
       <div className="space-y-6">
-        <h1 className="text-4xl sm:text-5xl leading-[1.4] sm:leading-[1.4]">{CASE_PROCESS_CONSTANTS.title}</h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.4] sm:leading-[1.4]">{CASE_PROCESS_CONSTANTS.title}</h1>
         <p className="mx-auto max-w-[600px] text-lg text-muted-foreground leading-relaxed">
           {CASE_PROCESS_CONSTANTS.description}
         </p>

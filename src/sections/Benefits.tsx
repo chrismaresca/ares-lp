@@ -35,7 +35,7 @@ export default function Benefits() {
           {BENEFITS_CONSTANTS.badge}
         </p>
         <div className="space-y-6">
-          <h1 className="text-4xl sm:text-5xl leading-[1.4] sm:leading-[1.4]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.4] sm:leading-[1.4]">
             {BENEFITS_CONSTANTS.title.firstLine.beforeItalic}{" "}
             <span className="italic font-serif">{BENEFITS_CONSTANTS.title.firstLine.italic}</span>{" "}
             {BENEFITS_CONSTANTS.title.firstLine.afterItalic}

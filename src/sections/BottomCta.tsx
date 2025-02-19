@@ -8,7 +8,7 @@ export default function BottomCta() {
       <div className="container">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 flex items-center justify-center">
           <div className="mx-auto max-w-screen-sm text-center flex flex-col items-center">
-            <h2 className="mb-8 text-4xl font-medium tracking-tight sm:text-5xl">{bottomCTAConstants.title}</h2>
+            <h2 className="mb-8 text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl">{bottomCTAConstants.title}</h2>
             <p className="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">{bottomCTAConstants.description}</p>
 
             <MotionButtonWithCustomIcon size="lg" textOptions={{ textOptions: [{ text: bottomCTAConstants.cta, href: CONTACT_US_CALL_LINK }], blank: true }} fromColor="bg-primary" toColor="bg-black" switchTextColor={false} />
