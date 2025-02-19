@@ -1,5 +1,5 @@
 // Icons
-import { Clock, Search, Maximize2, ArrowRight } from "lucide-react";
+import { Clock, Search, Maximize2 } from "lucide-react";
 
 // GLOBAL CONSTANTS
 export const DEMO_CALL_LINK = "https://cal.com/team/ares-legal/demo";
@@ -33,8 +33,8 @@ export const NAVIGATION_ITEMS = [
     href: "/#testimonials",
   },
   {
-    title: "Solutions",
-    href: "/#solutions",
+    title: "Process",
+    href: "/#process",
   },
   // {
   //   title: "Contact Us",
@@ -189,64 +189,33 @@ export const logoTickerConstants = {
 // Case Process Section
 
 export const CASE_PROCESS_CONSTANTS = {
-  badge: "Our Roadmap",
+  badge: "How It Works",
   title: "Built By Experts In Medical Records And Legal Tech",
   description: "Ares is created by a founding team with experience in medical records and legal tech. Committed to building the best tool for personal injury law firms.",
   cta: "Book Demo",
   processSteps: [
     {
-      title: "Case intake and evaluation",
-      comingSoon: false,
-      description: "Evaluate case value and key facts to identify the best cases, helping you grow your firm's capacity to take on more.",
-      completed: true,
-      action: DEMO_BUTTON_TEXT,
-      actionHref: DEMO_CALL_LINK,
-      actionActive: true,
+      number: "1",
+      title: "Initial Consultation",
+      description: "Tell us about your case details, medical records, and specific requirements. We'll evaluate your case and provide a comprehensive assessment.",
     },
     {
-      title: "Medical Chronology",
-      comingSoon: false,
-      description: "Comprehensive analysis of medical records, automatically identifying key treatments, diagnoses, and expert opinions.",
-      completed: true,
-      action: DEMO_BUTTON_TEXT,
-      actionHref: DEMO_CALL_LINK,
-      actionTarget: "_blank",
-      actionActive: true,
+      number: "2",
+      title: "Case Analysis",
+      description: "Our expert team analyzes your medical records and case documents to identify key elements and build a strong foundation for your claim.",
     },
     {
-      title: "Demand Letters",
-      comingSoon: true,
-      description: "Automated generation of persuasive demand letters, incorporating all relevant case details and medical findings.",
-      completed: false,
-      action: "Coming Soon",
-      actionHref: DEMO_CALL_LINK,
-      actionTarget: "_blank",
-      actionActive: false,
+      number: "3",
+      title: "Documentation Review",
+      description: "We thoroughly review all medical chronologies and documentation to ensure accuracy and completeness of your case file.",
     },
     {
-      title: "Continuous Discovery",
-      comingSoon: true,
-      description: "Ongoing process of gathering and analyzing new information, ensuring your case strategy remains up-to-date.",
-      completed: false,
-      action: "Coming Soon",
-      actionHref: DEMO_CALL_LINK,
-      actionTarget: "_blank",
-      actionActive: false,
-    },
-    {
-      title: "Litigation Management",
-      comingSoon: true,
-      description: "Comprehensive oversight of the entire litigation process, from filing to settlement or trial.",
-      completed: false,
-      action: "Coming Soon",
-      actionHref: DEMO_CALL_LINK,
-      actionTarget: "_blank",
-      actionActive: false,
+      number: "4",
+      title: "Case Strategy",
+      description: "Based on our analysis, we develop a comprehensive strategy to maximize your case's potential and guide you through the next steps.",
     },
   ],
 };
-
-
 
 // Bottom CTA Section
 
@@ -263,7 +232,6 @@ export const footerConstants = {
   emails: ["karn@areslegal.com", "chris@areslegal.com"],
 };
 
-
 // Contact Us Section
 
 export const contactUsConstants = {
@@ -275,4 +243,3 @@ export const contactUsConstants = {
   copyEmailSubtitleMobile: "Send us an email at:",
   emails: ["karn@areslegal.com", "chris@areslegal.com"],
 };
-

@@ -3,24 +3,29 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+
+// React
+import { useEffect, useRef, useState } from "react";
 
 // Constants
 import { CASE_PROCESS_CONSTANTS } from "@/constants/website";
 
 function CaseProcessHeader() {
   return (
-    <div className="mx-auto max-w-[800px] text-center space-y-8 py-16 intersect-once intersect:motion-preset-slide-up motion-delay-0 motion-duration-600 motion-ease-in-out">
+    <div className="mx-auto max-w-[800px] text-center space-y-8 py-16 intersect-once intersect:motion-preset-slide-up motion-delay-100 motion-duration-500 motion-ease-in-out">
       <p className="text-sm tracking-widest mb-6 text-muted-foreground font-medium uppercase">{CASE_PROCESS_CONSTANTS.badge}</p>
       <div className="space-y-6">
         <h1 className="text-4xl sm:text-5xl leading-[1.4] sm:leading-[1.4]">{CASE_PROCESS_CONSTANTS.title}</h1>
-        <p className="mx-auto max-w-[600px] text-lg text-muted-foreground leading-relaxed">{CASE_PROCESS_CONSTANTS.description}</p>
+        <p className="mx-auto max-w-[600px] text-lg text-muted-foreground leading-relaxed">
+          {CASE_PROCESS_CONSTANTS.description}
+        </p>
       </div>
       <Link href="/contact-us" className="flex justify-center">
-        <Button variant="default" size="lg" className="text-[17px] bg-primary hover:bg-black font-medium tracking-tight group transition-all duration-300">
-          <div className="flex items-center">
-            <span className="mr-4 group-hover:scale-[1.02] transition-all duration-300 ease-in-out">{CASE_PROCESS_CONSTANTS.cta}</span>
-            <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300 ease-in-out" />
-          </div>
+        <Button size="lg" className="text-[17px] font-medium tracking-tight group">
+          <span className="mr-4">{CASE_PROCESS_CONSTANTS.cta}</span>
+          <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
         </Button>
       </Link>
     </div>
@@ -28,43 +33,97 @@ function CaseProcessHeader() {
 }
 
 export default function CaseProcess() {
-  // Find the index of the last completed step
-  const activeIndex = CASE_PROCESS_CONSTANTS.processSteps.findLastIndex((step) => step.completed);
+  // Start with -1 so that no step is triggered initially
+  const [activeStep, setActiveStep] = useState(-1);
+  const stepsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const progressRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observers = stepsRef.current.map((step, index) => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            // Only update if this step is further than any previously triggered step
+            setActiveStep((prev) => Math.max(prev, index));
+          }
+        },
+        {
+          threshold: 0.2,
+          rootMargin: "0px 0px -50% 0px",
+        }
+      );
+
+      if (step) {
+        observer.observe(step);
+      }
+
+      return observer;
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
+
+  useEffect(() => {
+    if (progressRef.current) {
+      // Calculate progress based on the number of steps triggered.
+      // activeStep starts at -1, so until the first step is triggered, progress will be 0.
+      const progress = ((activeStep + 1) / CASE_PROCESS_CONSTANTS.processSteps.length) * 100;
+      progressRef.current.style.height = `${progress}%`;
+    }
+  }, [activeStep]);
 
   return (
-    <section className="relative " id="solutions">
+    <section className="relative" id="process">
       <div className="container py-24 md:py-32">
         <CaseProcessHeader />
 
-        <div className="max-w-3xl mx-auto mt-16">
+        <div className="relative max-w-5xl mx-auto mt-32">
+          {/* Center line container */}
+          <div className="absolute left-1/2 -top-28 -bottom-28 w-[2px] bg-border/30 -translate-x-1/2">
+            {/* Progress line */}
+            <div
+              ref={progressRef}
+              className="absolute top-0 left-0 w-full bg-black transition-all duration-500 ease-in-out"
+              style={{ height: "0%" }}
+            />
+          </div>
+
+          {/* Process steps */}
           <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-[7px] top-0 bottom-0 w-[1px] bg-black/20" />
-
-            {/* Timeline items */}
             {CASE_PROCESS_CONSTANTS.processSteps.map((step, index) => (
-              <div key={index} className={`relative pl-10 pb-12 last:pb-0 intersect-once intersect:motion-preset-slide-up motion-delay-[${(index + 1) * 100}ms] motion-duration-800 motion-ease-in-out`}>
-                {/* Timeline dot */}
+              <div
+                key={index}
+                ref={(el) => {
+                  if (el) {
+                    stepsRef.current[index] = el;
+                  }
+                }}
+                className={`relative flex items-center gap-8 mb-16 last:mb-0 ${
+                  index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                }`}
+              >
+                {/* Step number with circle */}
                 <div
-                  className={`absolute left-0 w-[15px] h-[15px] rounded-full 
-                    ${step.completed ? "bg-black" : index === activeIndex + 1 ? "bg-black animate-pulse" : "bg-black/20"}`}
-                />
-
-                {/* Content */}
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <h3 className={`text-xl font-semibold ${step.comingSoon ? "text-muted-foreground" : ""}`}>{step.title}</h3>
-                    {/* {step.comingSoon && <span className="text-xs bg-muted px-2 py-1 rounded-full">Coming Soon</span>} */}
-                  </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
-                  <div className="flex ">
-                    <Link href={step.actionHref ?? ""} target={step.actionTarget ?? "_self"} className={`${step.actionActive ? "opacity-100 pointer-events-auto" : "opacity-50 pointer-events-none"}`} aria-disabled={!step.actionActive} tabIndex={step.actionActive ? 0 : -1}>
-                      <Button variant={step.comingSoon ? "outline" : "default"} size="sm" className="flex items-center gap-2" disabled={!step.actionActive}>
-                        {step.action}
-                      </Button>
-                    </Link>
-                  </div>
+                  className={`absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full 
+                  ${index <= activeStep ? "bg-black" : "bg-black/40"} 
+                  text-primary-foreground font-semibold z-10 transition-colors duration-500 intersect-once intersect:motion-preset-slide-up motion-delay-[${index +
+                    1 * 100}ms]`}
+                >
+                  {step.number} 
                 </div>
+
+                {/* Content card */}
+                <Card
+                  className={`w-[calc(50%-2rem)] p-6 space-y-3 ${
+                    index % 2 === 0 ? "mr-auto" : "ml-auto"
+                  } ${index <= activeStep ? "border-black" : ""} transition-all duration-500 intersect-once intersect:motion-preset-slide-up motion-delay-[${index +
+                    1 * 200}ms]`}
+                >
+                  <h3 className="text-xl font-semibold">{step.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                </Card>
               </div>
             ))}
           </div>
