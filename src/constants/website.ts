@@ -131,8 +131,8 @@ export const FaqConstants = {
 
 export const testimonialsConstants = {
   badge: "Testimonials",
-  title1: "Don't take our word for it!",
-  title2: "Hear it from our partners.",
+  title1: "Don't just take our word for it!",
+  title2: "Hear from our partners.",
   testimonials: [
     {
       quote: "I love how Ares provides a straightforward, high-level summary of a client's medical records. It helps me quickly grasp key dates, the patient's age, and the overall treatment story at a glance. It's been a huge time-saver and cuts down on the hours I'd normally spend sifting through endless pages of records.",
