@@ -27,7 +27,7 @@ export function MotionButton({ buttonText, buttonHref, variant, size = "lg", bla
   return (
     <Link href={buttonHref} target={blank ? "_blank" : "_self"}>
       <motion.div className={`relative ${fromColor} overflow-hidden rounded-lg border ${borderColor} transition-colors duration-150`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-        <Button size={size} className={`${textColor} bg-transparent hover:bg-transparent relative z-20 px-6 py-5 font-sans font-medium transition-colors duration-150 w-44`}>
+        <Button size={size} className={`${textColor} bg-transparent hover:bg-transparent relative z-20 px-6 py-5 font-medium transition-colors duration-150 w-44`}>
           <span className="flex-1 text-left">{buttonText}</span>
           <motion.div animate={{ x: isHovered ? 5 : 0 }} transition={{ duration: 0.2 }}>
             <ArrowRight className="h-5 w-5" />
