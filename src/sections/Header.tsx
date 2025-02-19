@@ -6,7 +6,7 @@ import Logo from "@/components/header/logo";
 import MainNav from "@/components/header/main-nav";
 
 // Constants
-import { DEMO_CALL_LINK } from "@/constants/website";
+import { DEMO_CALL_LINK, DEMO_BUTTON_TEXT } from "@/constants/website";
 
 // Components
 import Link from "next/link";
@@ -26,15 +26,18 @@ export default function Header() {
         </div>
         <div className="flex items-center gap-4">
           {/* Sign in Button */}
-          <Button variant="ghost" className="hidden lg:flex">
-            Sign in
-          </Button>
+          <Link href="/contact-us">
+            <Button variant="ghost" className="hidden sm:flex">
+              Contact Us
+            </Button>
+          </Link>
           {/* End of Sign in Button */}
 
           {/* Schedule a call Button */}
           <Button>
             <Link target="_blank" href={DEMO_CALL_LINK} className="flex items-center">
-              Schedule a call
+              {DEMO_BUTTON_TEXT}
+              <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
           {/* End of Schedule a call Button */}

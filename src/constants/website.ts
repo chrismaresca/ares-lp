@@ -1,16 +1,22 @@
-// HERO SECTION
+// Icons
+import { Clock, Search, Maximize2, ArrowRight } from "lucide-react";
 
+// GLOBAL CONSTANTS
 export const DEMO_CALL_LINK = "https://cal.com/team/ares-legal/demo";
+// TODO: add a contact us call link
+export const CONTACT_US_CALL_LINK = "https://cal.com/team/ares-legal/intro-call";
 export const CHRONOLOGY_FILE_URL = "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/ares-medchron-example.docx";
+export const DEMO_BUTTON_TEXT = "Schedule Demo";
 
 // Avatar Images
 const AVATAR_IMAGES = ["https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/daniel-headshot.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/jason-epstein.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/louis-maxwell-holzberg.png", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/zach-harris.jpeg"];
 
+// HERO SECTION
 export const heroSection = {
   title: "Save Time, Settle Faster",
   description: "Ares helps personal injury firms save hours on medical records review, uncover key facts, and build a winning strategy. Let Ares help you save time and settle faster.",
-  mainCTA: "Schedule a call",
-  secondaryCTA: "Get sample chronology",
+  mainCTA: DEMO_BUTTON_TEXT,
+  secondaryCTA: "Example Chronology",
   trustBadgeText: "Trusted by leading personal injury firms",
   avatarImages: AVATAR_IMAGES,
 };
@@ -24,12 +30,16 @@ export const NAVIGATION_ITEMS = [
   },
   {
     title: "Testimonials",
-    href: "#testimonials",
+    href: "/#testimonials",
   },
   {
     title: "Solutions",
-    href: "#solutions",
+    href: "/#solutions",
   },
+  // {
+  //   title: "Contact Us",
+  //   href: "/contact-us",
+  // },
 ];
 
 export const SOLUTIONS = [
@@ -54,6 +64,40 @@ export const SOLUTIONS = [
     href: "/solutions/litigation-support",
   },
 ];
+
+// Benefits Section
+
+export const BENEFITS_CONSTANTS = {
+  badge: "Introducing Ares",
+  title: {
+    firstLine: {
+      beforeItalic: "Automate",
+      italic: "high quality",
+      afterItalic: "case research",
+    },
+    secondLine: {
+      before: "to speed up your case generation",
+    },
+  },
+  description: "Ares analyzes your cases & surfaces insights you'd normally spend hours uncovering.",
+  cards: [
+    {
+      icon: Clock,
+      stat: "15+",
+      label: "Hours Saved Per Case",
+    },
+    {
+      icon: Search,
+      stat: "100%",
+      label: "Case Coverage",
+    },
+    {
+      icon: Maximize2,
+      stat: "2x",
+      label: "Caseload Capacity",
+    },
+  ],
+};
 
 // FAQ Section
 
@@ -144,8 +188,9 @@ export const logoTickerConstants = {
 
 // Case Process Section
 
-export const caseProcessConstants = {
-  title: "Made for Modern Medical Chronologies",
+export const CASE_PROCESS_CONSTANTS = {
+  badge: "Our Roadmap",
+  title: "Built By Experts In Medical Records And Legal Tech",
   description: "Ares is created by a founding team with experience in medical records and legal tech. Committed to building the best tool for personal injury law firms.",
   cta: "Schedule a call",
   processSteps: [
@@ -153,52 +198,81 @@ export const caseProcessConstants = {
       title: "Case intake and evaluation",
       comingSoon: false,
       description: "Evaluate case value and key facts to identify the best cases, helping you grow your firm's capacity to take on more.",
-      progress: 91,
-      progressText: "Generating case timeline and key claims",
+      completed: true,
+      action: DEMO_BUTTON_TEXT,
+      actionHref: DEMO_CALL_LINK,
+      actionActive: true,
     },
     {
       title: "Medical Chronology",
       comingSoon: false,
       description: "Comprehensive analysis of medical records, automatically identifying key treatments, diagnoses, and expert opinions.",
-      progress: 75,
-      progressText: "Analyzing medical documentation",
+      completed: true,
+      action: DEMO_BUTTON_TEXT,
+      actionHref: DEMO_CALL_LINK,
+      actionTarget: "_blank",
+      actionActive: true,
     },
     {
       title: "Demand Letters",
       comingSoon: true,
       description: "Automated generation of persuasive demand letters, incorporating all relevant case details and medical findings.",
-      progress: 60,
-      progressText: "Drafting demand letters",
+      completed: false,
+      action: "Coming Soon",
+      actionHref: DEMO_CALL_LINK,
+      actionTarget: "_blank",
+      actionActive: false,
     },
     {
       title: "Continuous Discovery",
       comingSoon: true,
       description: "Ongoing process of gathering and analyzing new information, ensuring your case strategy remains up-to-date.",
-      progress: 45,
-      progressText: "Managing discovery process",
+      completed: false,
+      action: "Coming Soon",
+      actionHref: DEMO_CALL_LINK,
+      actionTarget: "_blank",
+      actionActive: false,
     },
     {
       title: "Litigation Management",
       comingSoon: true,
       description: "Comprehensive oversight of the entire litigation process, from filing to settlement or trial.",
-      progress: 30,
-      progressText: "Coordinating litigation strategy",
+      completed: false,
+      action: "Coming Soon",
+      actionHref: DEMO_CALL_LINK,
+      actionTarget: "_blank",
+      actionActive: false,
     },
   ],
 };
+
+
 
 // Bottom CTA Section
 
 export const bottomCTAConstants = {
   title: "Let's find more value in your cases.",
   description: "Ares is a tool that helps you find more value in your cases. It is a tool that helps you find more value in your cases. It is a tool that helps you find more value in your cases.",
-  cta: "Schedule a call",
-  cta2: "Watch Demo",
+  cta: DEMO_BUTTON_TEXT,
 };
 
 // Footer Section
 
 export const footerConstants = {
   copyright: "© 2025 Ares Legal. All rights reserved.",
-  email: "founders@areslegal.com",
+  emails: ["karn@areslegal.com", "chris@areslegal.com"],
 };
+
+
+// Contact Us Section
+
+export const contactUsConstants = {
+  tag1: "Contact",
+  tag2: "Us",
+  title: "We Believe Founders Should Always Be Accessible",
+  description: "We believe founders should always be accessible. If you have any questions, please don't hesitate to reach out to us.",
+  copyEmailSubtitle: "Or, if you're like Chris and also don't have email set up on Mac, you can copy our emails directly:",
+  copyEmailSubtitleMobile: "Send us an email at:",
+  emails: ["karn@areslegal.com", "chris@areslegal.com"],
+};
+
