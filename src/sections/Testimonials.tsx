@@ -17,7 +17,7 @@ const caveat = Caveat({
 
 export default function Testimonials() {
   return (
-    <section className="container py-48 sm:py-56 intersect-once intersect:motion-preset-slide-up motion-delay-200 motion-duration-800 motion-ease-in-out" id="testimonials">
+    <section className="container section-spacing intersect-once intersect:motion-preset-slide-up motion-delay-200 motion-duration-800 motion-ease-in-out" id="testimonials">
       <div className="mb-32 max-w-[800px]">
         <p className="text-sm tracking-widest mb-6 text-muted-foreground font-medium uppercase">{testimonialsConstants.badge}</p>
 

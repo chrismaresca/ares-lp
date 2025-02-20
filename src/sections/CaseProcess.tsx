@@ -69,13 +69,13 @@ export default function CaseProcess() {
   }, [activeStep]);
 
   return (
-    <section className="relative" id="process">
-      <div className="container py-24 md:py-32">
+    <section className="relative section-spacing" id="process">
+      <div className="container">
         <CaseProcessHeader />
 
         <div className="relative max-w-5xl mx-auto mt-32">
           {/* Center line container */}
-          <div className="absolute left-1/2 -top-28 -bottom-28 w-[2px] bg-border/30 -translate-x-1/2">
+          <div className="absolute left-1/2 -top-28 -bottom-[-80px] w-[2.5px] bg-border/30 -translate-x-1/2">
             {/* Progress line */}
             <div
               ref={progressRef}

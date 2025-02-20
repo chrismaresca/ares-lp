@@ -5,7 +5,7 @@ import { Clock, Search, Maximize2, ShieldCheck } from "lucide-react";
 export const CONTACT_US_CALL_LINK = "https://cal.com/team/ares-legal/intro";
 export const CHRONOLOGY_FILE_URL = "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/ares-medchron-example.docx";
 export const DEMO_BUTTON_TEXT = "Schedule a Call";
-
+export const SIGN_IN_LINK = "https://app.areslegal.ai/";
 // Avatar Images
 const AVATAR_IMAGES = ["https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/daniel-headshot.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/jason-epstein.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/louis-maxwell-holzberg.png", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/zach-harris.jpeg"];
 
@@ -34,10 +34,14 @@ export const NAVIGATION_ITEMS = [
     title: "Process",
     href: "/#process",
   },
-  // {
-  //   title: "Contact Us",
-  //   href: "/contact-us",
-  // },
+  {
+    title: "FAQ",
+    href: "/#faq",
+  },
+  {
+    title: "Contact Us",
+    href: "/contact-us",
+  },
 ];
 
 // export const SOLUTIONS = [

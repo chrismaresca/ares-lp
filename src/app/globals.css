@@ -66,6 +66,11 @@ body {
   }
 }
 
+
+.section-spacing {
+  @apply pt-36 sm:pt-48;
+}
+
 @layer base {
   * {
     @apply border-border;

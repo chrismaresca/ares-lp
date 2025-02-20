@@ -6,7 +6,7 @@ import Logo from "@/components/header/logo";
 import MainNav from "@/components/header/main-nav";
 
 // Constants
-import { CONTACT_US_CALL_LINK, DEMO_BUTTON_TEXT } from "@/constants/website";
+import { CONTACT_US_CALL_LINK, DEMO_BUTTON_TEXT, SIGN_IN_LINK } from "@/constants/website";
 
 // Components
 import Link from "next/link";
@@ -26,9 +26,9 @@ export default function Header() {
         </div>
         <div className="flex items-center gap-4">
           {/* Sign in Button */}
-          <Link href="/contact-us">
+          <Link href={SIGN_IN_LINK} target="_blank">
             <Button variant="ghost" className="hidden sm:flex">
-              Contact Us
+              Sign in
             </Button>
           </Link>
           {/* End of Sign in Button */}

@@ -1,8 +1,8 @@
-import { DEMO_BUTTON_TEXT, CONTACT_US_CALL_LINK, BENEFITS_CONSTANTS } from "@/constants/website"
-import { MotionButtonWithCustomIcon } from "@/components/buttons/motion-button-with-icon"
+import { DEMO_BUTTON_TEXT, CONTACT_US_CALL_LINK, BENEFITS_CONSTANTS } from "@/constants/website";
+import { MotionButtonWithCustomIcon } from "@/components/buttons/motion-button-with-icon";
 
 const BenefitCard = ({ card }: { card: (typeof BENEFITS_CONSTANTS.cards)[0] }) => {
-  const Icon = card.icon
+  const Icon = card.icon;
 
   return (
     <div className="p-8 flex flex-col items-center text-center">
@@ -13,40 +13,26 @@ const BenefitCard = ({ card }: { card: (typeof BENEFITS_CONSTANTS.cards)[0] }) =
       <p className="mb-4 text-base font-medium text-gray-800">{card.label}</p>
       <p className="text-[14px] mt-3 leading-relaxed text-gray-500 max-w-[280px]">{card.description}</p>
     </div>
-  )
-}
+  );
+};
 
 export default function Benefits() {
   return (
-    <section
-      className="container py-48 sm:py-56 intersect-once intersect:motion-preset-slide-up motion-delay-200 motion-duration-800 motion-ease-in-out"
-      id="features"
-    >
+    <section className="container section-spacing intersect-once intersect:motion-preset-slide-up motion-delay-200 motion-duration-800 motion-ease-in-out" id="features">
       <div className="mx-auto max-w-[1000px] text-center space-y-8 mb-32">
-        <p className="text-sm tracking-widest mb-6 text-muted-foreground font-medium uppercase">
-          {BENEFITS_CONSTANTS.badge}
-        </p>
+        <p className="text-sm tracking-widest mb-6 text-muted-foreground font-medium uppercase">{BENEFITS_CONSTANTS.badge}</p>
         <div className="space-y-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.4] sm:leading-[1.4]">
-            {BENEFITS_CONSTANTS.title.firstLine.beforeItalic}{" "}
-            <span className="italic font-serif">
-              {BENEFITS_CONSTANTS.title.firstLine.italic}
-            </span>{" "}
-            {BENEFITS_CONSTANTS.title.firstLine.afterItalic}
-            <br className="hidden sm:block" />{" "}
-            {BENEFITS_CONSTANTS.title.secondLine.before}
+            {BENEFITS_CONSTANTS.title.firstLine.beforeItalic} <span className="italic font-serif">{BENEFITS_CONSTANTS.title.firstLine.italic}</span> {BENEFITS_CONSTANTS.title.firstLine.afterItalic}
+            <br className="hidden sm:block" /> {BENEFITS_CONSTANTS.title.secondLine.before}
           </h1>
-          <p className="mx-auto max-w-[600px] text-lg text-muted-foreground leading-relaxed">
-            {BENEFITS_CONSTANTS.description}
-          </p>
+          <p className="mx-auto max-w-[600px] text-lg text-muted-foreground leading-relaxed">{BENEFITS_CONSTANTS.description}</p>
         </div>
         <div className="flex justify-center">
           <MotionButtonWithCustomIcon
             size="lg"
             textOptions={{
-              textOptions: [
-                { text: DEMO_BUTTON_TEXT, href: CONTACT_US_CALL_LINK },
-              ],
+              textOptions: [{ text: DEMO_BUTTON_TEXT, href: CONTACT_US_CALL_LINK }],
               blank: true,
             }}
             fromColor="bg-primary"
@@ -67,4 +53,3 @@ export default function Benefits() {
     </section>
   );
 }
-

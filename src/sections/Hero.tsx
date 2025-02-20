@@ -18,7 +18,7 @@ import { MotionButtonWithCustomIcon } from "@/components/buttons/motion-button-w
 
 export default function Hero() {
   return (
-    <div className="relative overflow-x-hidden" id="hero">
+    <div className="relative overflow-hidden" id="hero">
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/5 via-primary/10 to-transparent blur-[100px]" />
       <section className="container relative pt-24 md:pt-32">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
