@@ -20,9 +20,8 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 export default function Hero() {
   return (
-    <div className="relative min-h-screen" id="hero">
-      {/* <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/5 via-primary/10 to-transparent blur-[100px]" /> */}
-      <section className="container overflow-x-hidden relative pt-24 md:pt-32">
+    <div className="relative min-h-screen pt-24 md:pt-32" id="hero">
+      <section className="container overflow-x-hidden relative">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-6 motion-opacity-in-0 motion-duration-[800ms] motion-delay-300 motion-ease-spring-smooth">
