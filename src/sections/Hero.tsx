@@ -34,7 +34,7 @@ export default function Hero() {
               <div className="hidden sm:block">
                 <MotionButtonWithCustomIcon size="lg" textOptions={{ textOptions: [{ text: heroSection.mainCTA, href: CONTACT_US_CALL_LINK }], blank: true }} fromColor="bg-primary" toColor="bg-black" switchTextColor={false} />
               </div>
-              <Link href={heroSection.mainCTA} className="w-full sm:hidden">
+              <Link href={CONTACT_US_CALL_LINK} className="w-full sm:hidden">
                 <Button size="lg" variant="default" className="flex items-center w-full">
                   {heroSection.mainCTA}
                   <ArrowRight className="ml-2 h-4 w-4" />
