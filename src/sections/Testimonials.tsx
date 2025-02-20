@@ -36,7 +36,7 @@ export default function Testimonials() {
                 <Image src={testimonial.avatar || "/placeholder.svg"} alt={testimonial.author} width={64} height={64} className="rounded-full" />
               </div>
               {/* Quote – reserve space for footer by adding bottom margin */}
-              <blockquote className="mb-[80px] flex-grow overflow-hidden text-[1.1rem] leading-relaxed">&quot;{testimonial.quote}&quot;</blockquote>
+              <blockquote className="mb-[120px] md:mb-[80px] flex-grow overflow-hidden text-[1.1rem] leading-relaxed">&quot;{testimonial.quote}&quot;</blockquote>
               {/* Footer fixed at the bottom */}
               <footer className="absolute bottom-10 left-10 right-10">
                 <div className={`${caveat.className} mb-1 text-2xl`}>{testimonial.author}</div>

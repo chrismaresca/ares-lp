@@ -10,7 +10,7 @@ import { logoTickerConstants } from "@/constants/website"
 
 export default function LogoTicker() {
   return (
-    <section className="w-full overflow-hidden bg-white py-8 md:py-12">
+    <section className="w-full overflow-hidden py-8 md:py-12">
       <div className="container">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.div
