@@ -18,7 +18,7 @@ const BenefitCard = ({ card }: { card: (typeof BENEFITS_CONSTANTS.cards)[0] }) =
 
 export default function Benefits() {
   return (
-    <section className="container section-spacing intersect-once intersect:motion-preset-slide-up motion-delay-200 motion-duration-800 motion-ease-in-out" id="features">
+    <section className="container pt-24 sm:pt-32 intersect-once intersect:motion-preset-slide-up motion-delay-200 motion-duration-800 motion-ease-in-out" id="features">
       <div className="mx-auto max-w-[1000px] text-center space-y-8 mb-32">
         <p className="text-sm tracking-widest mb-6 text-muted-foreground font-medium uppercase">{BENEFITS_CONSTANTS.badge}</p>
         <div className="space-y-6">
