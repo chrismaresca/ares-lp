@@ -26,10 +26,10 @@ export const NAVIGATION_ITEMS = [
     title: "Features",
     href: "/#features",
   },
-  {
-    title: "Testimonials",
-    href: "/#testimonials",
-  },
+  // {
+  //   title: "Testimonials",
+  //   href: "/#testimonials",
+  // },
   {
     title: "Process",
     href: "/#process",
