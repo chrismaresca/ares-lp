@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { Scale } from "lucide-react";
+import Image from "next/image";
+
 
 export default function Logo() {
   return (
     <Link href="/" className="flex items-center space-x-2">
-      <Scale className="h-6 w-6" />
-      <span className="text-xl font-bold">Ares</span>
+      <Image src="/logo.png" alt="Ares Legal" width={20} height={20} />
+      <span className="text-xl font-bold font-mono">Ares</span>
     </Link>
   );
 }
