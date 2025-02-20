@@ -30,7 +30,7 @@ export default function Hero() {
               <p className="max-w-[600px] text-lg text-muted-foreground sm:text-xl">{heroSection.description}</p>
             </div>
 
-            <div className="flex max-w-full flex-col gap-4 sm:flex-row motion-opacity-in-0 motion-translate-y-in-100 md:motion-blur-in-md motion-duration-[800ms] motion-delay-700 motion-ease-spring-smooth">
+            <div className="flex max-w-full flex-col gap-4 sm:flex-row motion-opacity-in-0 motion-translate-y-in-100  motion-duration-[800ms] motion-delay-700 motion-ease-spring-smooth">
               <div className="hidden sm:block">
                 <MotionButtonWithCustomIcon size="lg" textOptions={{ textOptions: [{ text: heroSection.mainCTA, href: CONTACT_US_CALL_LINK }], blank: true }} fromColor="bg-primary" toColor="bg-black" switchTextColor={false} />
               </div>
@@ -46,7 +46,7 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div className="flex items-center space-x-4 text-sm motion-opacity-in-0 md:motion-blur-in-md motion-duration-[800ms] motion-delay-[1000ms] motion-ease-spring-smooth">
+            <div className="flex items-center space-x-4 text-sm motion-opacity-in-0  motion-duration-[800ms] motion-delay-[1000ms] motion-ease-spring-smooth">
               <div className="flex -space-x-1.5">
                 {[...Array(4)].map((_, i) => (
                   <Avatar key={i} className="h-8 w-8">
@@ -59,11 +59,11 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="motion-opacity-in-0 md:motion-blur-in-md motion-duration-[800ms] motion-delay-300 motion-ease-spring-smooth">
+          <div className="motion-opacity-in-0  motion-duration-[800ms] motion-delay-300 motion-ease-spring-smooth">
             <Video />
           </div>
         </div>
-        <div className="mt-16 motion-opacity-in-0 md:motion-blur-in-md motion-duration-[800ms] motion-delay-[1200ms] motion-ease-in-out">
+        <div className="mt-16 motion-opacity-in-0  motion-duration-[800ms] motion-delay-[1200ms] motion-ease-in-out">
           <LogoTicker />
         </div>
       </section>
