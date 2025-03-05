@@ -7,7 +7,12 @@ export const CHRONOLOGY_FILE_URL = "https://medchronai-files.s3.us-west-1.amazon
 export const DEMO_BUTTON_TEXT = "Schedule a Call";
 export const SIGN_IN_LINK = "https://app.areslegal.ai/";
 // Avatar Images
-const AVATAR_IMAGES = ["https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/daniel-headshot.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/jason-epstein.jpeg", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/louis-maxwell-holzberg.png", "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/zach-harris.jpeg"];
+const AVATAR_IMAGES = [
+  "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/dan+headshot.jpg",
+  "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/louis-maxwell-holzberg.png",
+  "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/zach-harris.jpeg",
+  "https://medchronai-files.s3.us-west-1.amazonaws.com/landing-page/rob+headshot.jpg",
+];
 
 // HERO SECTION
 export const heroSection = {
@@ -166,14 +171,14 @@ export const testimonialsConstants = {
 // TODO: move these to our own blob storage
 export const logoTickerConstants = {
   logos: [
-    {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fieldinglaw-WZH7CEKiuw8H8tEj8Kh0K3Yr3SvdyK.png",
-      alt: "Fielding Law Group",
-    },
-    {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/plg-logo-pe1Y0hVD9PeWXGN86Bzs0ZBEp5IMvd.png",
-      alt: "Premier Law Group",
-    },
+    // {
+    //   src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fieldinglaw-WZH7CEKiuw8H8tEj8Kh0K3Yr3SvdyK.png",
+    //   alt: "Fielding Law Group",
+    // },
+    // {
+    //   src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/plg-logo-pe1Y0hVD9PeWXGN86Bzs0ZBEp5IMvd.png",
+    //   alt: "Premier Law Group",
+    // },
     {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/holzberg.png-5y2PaQvO3RDsmaI9MwqYF1qf5jbiKz.webp",
       alt: "Holzberg Legal",
